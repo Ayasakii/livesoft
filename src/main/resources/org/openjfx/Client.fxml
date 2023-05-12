@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="400.0" prefWidth="309.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.controller.ClientPaneController">
+    <center>
+        <ScrollPane opacity="0.53" prefHeight="365.0" prefWidth="481.0" style="-fx-background-color: #3e4040;" BorderPane.alignment="CENTER">
+            <content>
+                <TextArea fx:id="jta" prefHeight="362.0" prefWidth="305.0" style="-fx-background-color: #3e4040; -fx-background-radius: 10 10 10 10;" />
+            </content>
+        </ScrollPane>
+    </center>
+    <bottom>
+        <Pane prefHeight="35.0" prefWidth="433.0" style="-fx-background-color: #3e4040;" BorderPane.alignment="BOTTOM_LEFT">
+            <children>
+                <VBox layoutX="14.0" layoutY="14.0" />
+                <Button fx:id="jb" layoutX="255.0" layoutY="6.0" mnemonicParsing="false" onAction="#send" opacity="0.72" text="发送" />
+                <TextField fx:id="jtf" layoutX="5.0" layoutY="5.0" opacity="0.56" prefHeight="25.0" prefWidth="244.0" />
+            </children>
+        </Pane>
+    </bottom>
+</BorderPane>
